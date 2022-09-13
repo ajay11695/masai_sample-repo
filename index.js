@@ -18,3 +18,17 @@ checkPrime(12);
 
 
 // Check whether a string is palindrome or not.
+
+
+function palindrome(str){
+    let beg = '';
+    for(let i=str.length-1;i>=0;i--){
+        beg+=str[i];
+    }
+    if(beg===str){
+        console.log("palindrome");
+    }else{
+        console.log("Not palindrome");
+    }
+}
+palindrome("namen");
